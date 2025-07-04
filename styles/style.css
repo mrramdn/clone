@@ -426,6 +426,7 @@ h2 {
   background-image: url("../images/home/festivals-new.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -476,10 +477,13 @@ h2 {
   width: 100%;
   height: 45rem;
   background-image: url("../images/home/Brands Collab.png");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: scroll;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .a965_festivals2 div {
   position: relative;
