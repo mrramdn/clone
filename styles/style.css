@@ -508,10 +508,10 @@ h2 {
 }
 
 .a965_hero {
-  overflow-x: hidden;
   background-color: #F8F2EB;
-  height: 60rem;
+  height: 50rem;
   display: flex;
+  padding-bottom: 10rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -522,22 +522,34 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  width: 50rem;
+  gap: 4rem;
+  width: 80rem;
+}
+.a965_hero_content_para {
+  width: 40rem;
 }
 .a965_hero_content img {
-  width: 7rem;
+  width: 12rem;
 }
 @media (min-width: 20rem) and (max-width: 40rem) {
   .a965_hero {
-    width: 100%;
+    width: auto;
     height: 44rem;
   }
+  .a965_hero img {
+    width: 6rem;
+  }
   .a965_hero_content {
-    width: 90%;
+    width: 100%;
+  }
+  .a965_hero_content_para {
+    width: 80%;
   }
 }
 @media (min-width: 40rem) and (max-width: 60rem) {
+  .a965_hero img {
+    width: 9rem;
+  }
   .a965_hero_content {
     width: 45rem;
   }
