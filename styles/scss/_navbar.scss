@@ -1,0 +1,214 @@
+.off_screen_menu {
+    background-color: #151515;
+    height: 100vh;
+    width: 100%;
+    min-width: 80rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    overflow-y: hidden;
+    transform-origin: top right;
+    scale: 0;
+    transition: 0.4s ease;
+
+    img {
+        width: 5.5rem;
+        padding-bottom: 2.5rem;
+        opacity: 0;
+    }
+
+    li {
+        padding-top: 1.25rem;
+    }
+
+    a {
+        color: #fff;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding-left: 7.5rem;
+        opacity: 0;
+
+        &:hover {
+            text-decoration: underline;
+            transition: 1s ease;
+            transition-delay: 0.1s;
+        }
+    }
+
+    &.active {
+        transform-origin: top right;
+        scale: 100%;
+
+        img, a {
+            transition-delay: 1s;
+            transition: 0.5s ease;
+            transition-property: opacity;
+            opacity: 100%;
+            z-index: 1;
+        }
+    }
+
+    // Close button inside menu
+    .a965_header_hammenu.close {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        z-index: 2100;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+}
+
+// Navigation styles
+nav {
+    padding-top: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: flex-start !important;
+}
+
+// Header styles
+.a965_header {
+    background-color: #F8F2EB;
+    width: 100%;
+
+    nav {
+        align-items: center;
+
+        img {
+            margin-left: 2.5rem;
+        }
+    }
+}
+
+// Hamburger menu styles
+.a965_header_hammenu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+
+    span {
+        height: 4px;
+        width: 100%;
+        background-color: #151515;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 2px;
+
+        &:nth-child(1) {
+            top: 25%;
+            transform-origin: center;
+        }
+
+        &:nth-child(2) {
+            top: 50%;
+            transform-origin: center;
+        }
+
+        &:nth-child(3) {
+            top: 75%;
+            transform-origin: center;
+        }
+    }
+
+    &.active span {
+        background-color: #F8F2EB;
+
+        &:nth-child(1) {
+            top: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-50%) scale(0);
+        }
+
+        &:nth-child(3) {
+            top: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+        }
+    }
+
+    &.close {
+        span {
+            background-color: #fff !important;
+
+            &:nth-child(1) {
+                top: 50%;
+                transform: translateX(-50%) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transform: translateX(-50%) scale(0);
+            }
+
+            &:nth-child(3) {
+                top: 50%;
+                transform: translateX(-50%) rotate(-45deg);
+            }
+        }
+    }
+}
+
+// Mobile responsive styles
+@media (max-width: 768px) {
+    .off_screen_menu {
+        padding-top: 1.2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        width: 100vw;
+        min-width: 0;
+        box-sizing: border-box;
+
+        .a965_header_hammenu.close {
+            top: 16px;
+            right: 16px;
+            width: 32px;
+            height: 32px;
+        }
+
+        a {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            padding-left: 2rem;
+        }
+    }
+
+    .a965_header_hammenu {
+        width: 32px;
+        height: 32px;
+
+        span {
+            height: 3px;
+            border-radius: 1.5px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
