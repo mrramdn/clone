@@ -327,8 +327,6 @@ nav {
   color: #fff;
   padding: 5rem;
   height: auto;
-  /*tablet*/
-  /*mobile*/
 }
 .a965_footer_logo {
   display: flex;
@@ -369,41 +367,82 @@ nav {
 }
 .a965_footer a:hover {
   text-decoration: underline;
-  transition: 0.5 ease;
+  transition: 0.5s ease;
 }
-@media (min-width: 41rem) and (max-width: 60rem) {
+@media (min-width: 40.1rem) and (max-width: 60rem) {
   .a965_footer {
     padding: 2rem;
     gap: 1rem;
   }
-}
-.a965_footer_g {
-  flex-direction: row;
-}
-.a965_footer_g_column1 {
-  gap: 1.5rem;
-}
-.a965_footer_column2 p, .a965_footer_column2 ul {
-  line-height: 1rem;
+  .a965_footer_g {
+    flex-direction: row;
+  }
+  .a965_footer_g_column1 {
+    gap: 1.5rem;
+  }
+  .a965_footer_column2 p, .a965_footer_column2 ul {
+    line-height: 1rem;
+  }
 }
 @media (min-width: 20rem) and (max-width: 40rem) {
   .a965_footer {
     flex-direction: column;
     padding: 2rem;
-    gap: 3rem;
+    gap: 2rem;
+    align-items: flex-start;
   }
-}
-.a965_footer_g {
-  flex-direction: row;
-}
-.a965_footer_g_column1 {
-  gap: 1.5rem;
-}
-.a965_footer_column2 {
-  gap: 3rem;
-}
-.a965_footer_column2 p, .a965_footer_column2 ul {
-  line-height: 1.3rem;
+  .a965_footer_logo {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+  .a965_footer_logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0;
+  }
+  .a965_footer .a965_footer_column1 {
+    width: 100%;
+  }
+  .a965_footer .a965_footer_column1 li {
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+  }
+  .a965_footer .a965_footer_column1 li a {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .a965_footer .a965_footer_column1:first-of-type {
+    margin-bottom: 0;
+  }
+  .a965_footer .a965_footer_column1:nth-of-type(2) {
+    margin-top: -15rem;
+    margin-left: 60%;
+    width: 50%;
+  }
+  .a965_footer_column2 {
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .a965_footer_column2 p, .a965_footer_column2 ul {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+  }
+  .a965_footer .a965_footer_column1:last-child {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .a965_footer .a965_footer_column1:last-child li {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .a965_footer .a965_footer_column1:last-child li a {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
 }
 
 body {
