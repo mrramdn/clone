@@ -327,6 +327,7 @@ nav {
   color: #fff;
   padding: 5rem;
   height: auto;
+  /*tablet*/
 }
 .a965_footer_logo {
   display: flex;
@@ -367,22 +368,22 @@ nav {
 }
 .a965_footer a:hover {
   text-decoration: underline;
-  transition: 0.5s ease;
+  transition: 0.5 ease;
 }
-@media (min-width: 40.1rem) and (max-width: 60rem) {
+@media (min-width: 41rem) and (max-width: 60rem) {
   .a965_footer {
     padding: 2rem;
     gap: 1rem;
   }
-  .a965_footer_g {
-    flex-direction: row;
-  }
-  .a965_footer_g_column1 {
-    gap: 1.5rem;
-  }
-  .a965_footer_column2 p, .a965_footer_column2 ul {
-    line-height: 1rem;
-  }
+}
+.a965_footer_g {
+  flex-direction: row;
+}
+.a965_footer_g_column1 {
+  gap: 1.5rem;
+}
+.a965_footer_column2 p, .a965_footer_column2 ul {
+  line-height: 1rem;
 }
 @media (min-width: 20rem) and (max-width: 40rem) {
   .a965_footer {
