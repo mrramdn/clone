@@ -41,7 +41,7 @@ h1 {
 h2 {
     font-size: 2.6rem;
     line-height: 3.6rem;
-    font-weight: 200px;
+    font-weight: 200;
     
     @media (min-width: 20rem) and (max-width: 40rem) {
         font-size: 1.8rem;
@@ -56,7 +56,7 @@ h2 {
 .a965_hero {
     overflow-x: hidden;
     background-color: #F8F2EB;
-    height: 100vh;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +69,7 @@ h2 {
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        width: 78vw;
+        width: 50rem;
         
         img {
             width: 7rem;
@@ -77,16 +77,17 @@ h2 {
     }
     
     @media (min-width: 20rem) and (max-width: 40rem) {
-        width: 100vw;
+        width: 100%;
+        height: 44rem;
         
         &_content {
-            width: 80vw;
+            width: 90%;
         }
     }
     
     @media (min-width: 40rem) and (max-width: 60rem) {
         &_content {
-            width: 80vw;
+            width: 45rem;
         }
     }
 }
@@ -122,7 +123,7 @@ h2 {
     }
     
     a {
-        font-size: 21px;
+        font-size: 1.31rem;
         font-weight: 400;
         text-decoration: underline;
         color: #fff;
@@ -181,7 +182,7 @@ h2 {
     }
     
     a {
-        font-size: 21px;
+        font-size: 1.31rem;
         font-weight: 400;
         text-decoration: underline;
         color: #fff;
@@ -205,6 +206,7 @@ h2 {
     
     @media (min-width: 41rem) and (max-width: 60rem) {
         div {
+            height: 32rem;
             padding-bottom: 8rem;
         }
     }
@@ -220,9 +222,9 @@ h2 {
     transition: background-color 0.4s ease;
 
     a {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 400;
-        line-height: 58px;
+        line-height: 3.625rem;
         color: #fff;
     }
     
@@ -309,79 +311,53 @@ h2 {
     }
     
     @media (min-width: 20rem) and (max-width: 40rem) {
-        padding: 2rem;
+        padding: 1.5rem;
         height: auto;
-        
-        &_content {
+        &_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_left {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-right: 0;
-                z-index: auto;
-                
-                img {
-                    width: 100%;
-                    max-width: 20rem;
-                }
+                margin: 0rem 0rem 1.5rem 0rem;
             }
-            
             &_right {
-                margin-top: 2rem;
-                margin-right: 0;
-                z-index: auto;
-                
-                img {
-                    width: 100%;
-                    max-width: 18rem;
-                }
+                padding: -4rem;
+                margin: 0rem -2rem 0rem 4rem;
             }
-            
-            &_left_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            img{
+                width: 12rem;
+                height: 12rem;
+                padding: 1rem;
             }
-            
-            &_right_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            a{
+                font-size: 1rem;
+                line-height: 1.5rem;
             }
         }
     }
     
     @media (min-width: 41rem) and (max-width: 60rem) {
-        &_content {
+        padding: 4rem 2rem 4rem 2rem;
+        height: auto;
+        &_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_left {
-                img {
-                    width: 22rem;
-                }
+                margin: 0rem 8rem 1.5rem 0rem;
             }
-            
             &_right {
-                img {
-                    width: 18rem;
-                }
+                padding: -4rem;
+                margin: 0rem -2rem 0rem 8rem;
             }
-            
-            &_left_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            img{
+                width: 18rem;
+                height: 18rem;
+                padding: 1rem;
             }
-            
-            &_right_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            a{
+                font-size: 2rem;
+                line-height: 3rem;
             }
         }
     }
@@ -397,9 +373,9 @@ h2 {
     transition: background-color 0.4s ease;
 
     a {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 400;
-        line-height: 58px;
+        line-height: 3.625rem;
         color: #fff;
     }
 
@@ -486,79 +462,53 @@ h2 {
     }
     
     @media (min-width: 20rem) and (max-width: 40rem) {
-        padding: 2rem;
+        padding: 1.5rem;
         height: auto;
-        
-        &_content {
+        &_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_left {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-right: 0;
-                z-index: auto;
-                
-                img {
-                    width: 100%;
-                    max-width: 20rem;
-                }
+                margin: 0rem 0rem 1.5rem 0rem;
             }
-            
             &_right {
-                margin-top: 2rem;
-                margin-right: 0;
-                z-index: auto;
-                
-                img {
-                    width: 100%;
-                    max-width: 18rem;
-                }
+                padding: -4rem;
+                margin: 0rem -2rem 0rem 4rem;
             }
-            
-            &_left_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            img{
+                width: 12rem;
+                height: 12rem;
+                padding: 1rem;
             }
-            
-            &_right_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            a{
+                font-size: 1rem;
+                line-height: 1.5rem;
             }
         }
     }
     
     @media (min-width: 41rem) and (max-width: 60rem) {
-        &_content {
+     padding: 2rem;
+        height: auto;
+        &_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_left {
-                img {
-                    width: 22rem;
-                }
+                margin: 0rem 8rem 1.5rem 0rem;
             }
-            
             &_right {
-                img {
-                    width: 18rem;
-                }
+                padding: -4rem;
+                margin: 0rem -2rem 0rem 8rem;
             }
-            
-            &_left_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 3;
+            img{
+                width: 18rem;
+                height: 18rem;
+                padding: 1rem;
             }
-            
-            &_right_text {
-                padding: 2rem;
-                margin-left: -5rem;
-                text-align: left;
-                position: relative;
-                z-index: 2;
+            a{
+                font-size: 2rem;
+                line-height: 3rem;
             }
         }
     }
@@ -575,7 +525,7 @@ h2 {
 
     img {
         width: 20rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 
     @media (min-width: 20rem) and (max-width: 40rem) {
@@ -591,8 +541,13 @@ h2 {
     }
 
     @media (min-width: 41rem) and (max-width: 60rem) {
+        padding: 4rem;
+        width: auto;
         img {
-            width: 18rem;
+            padding: 0;
+            width: 12rem;
+            margin: 1rem;
+
         }
     }
 }

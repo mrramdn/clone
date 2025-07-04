@@ -1,88 +1,8 @@
-.off_screen_menu {
-    background-color: #151515;
-    height: 100vh;
-    width: 100%;
-    min-width: 80rem;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
-    overflow-y: hidden;
-    transform-origin: top right;
-    scale: 0;
-    transition: 0.4s ease;
+// ===========================================
+// NAVBAR STYLES
+// ===========================================
 
-    img {
-        width: 5.5rem;
-        padding-bottom: 2.5rem;
-        opacity: 0;
-    }
-
-    li {
-        padding-top: 1.25rem;
-    }
-
-    a {
-        color: #fff;
-        font-size: 2.6rem;
-        line-height: 3.6rem;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        padding-left: 7.5rem;
-        opacity: 0;
-
-        &:hover {
-            text-decoration: underline;
-            transition: 1s ease;
-            transition-delay: 0.1s;
-        }
-    }
-
-    &.active {
-        transform-origin: top right;
-        scale: 100%;
-
-        img, a {
-            transition-delay: 1s;
-            transition: 0.5s ease;
-            transition-property: opacity;
-            opacity: 100%;
-            z-index: 1;
-        }
-    }
-
-    // Close button inside menu
-    .a965_header_hammenu.close {
-        position: absolute;
-        top: 2.5rem;
-        right: 2.5rem;
-        z-index: 2100;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-        border: none;
-        padding: 0;
-    }
-}
-
-// Navigation styles
-nav {
-    padding-top: 40px;
-    padding-right: 40px;
-    display: flex;
-    align-items: flex-start !important;
-}
-
-// Header styles
+// Header Container
 .a965_header {
     background-color: #F8F2EB;
     width: 100%;
@@ -92,15 +12,41 @@ nav {
 
         img {
             margin-left: 2.5rem;
+            
+            @media (min-width: 20rem) and (max-width: 40rem) {
+                margin-left: 1.5rem;
+            }
+            
+            @media (min-width: 40.1rem) and (max-width: 60rem) {
+                margin-left: 2rem;
+            }
         }
     }
 }
 
-// Hamburger menu styles
+// Navigation Container
+nav {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    align-items: flex-start !important;
+    
+    @media (min-width: 20rem) and (max-width: 40rem) {
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    @media (min-width: 40.1rem) and (max-width: 60rem) {
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+// Hamburger Menu Button
 .a965_header_hammenu {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     margin-left: auto;
     position: relative;
     display: flex;
@@ -111,14 +57,14 @@ nav {
     padding: 0;
 
     span {
-        height: 4px;
+        height: 0.25rem;
         width: 100%;
         background-color: #151515;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border-radius: 2px;
+        border-radius: 0.125rem;
 
         &:nth-child(1) {
             top: 25%;
@@ -136,6 +82,7 @@ nav {
         }
     }
 
+    // Active state (when menu is open)
     &.active span {
         background-color: #F8F2EB;
 
@@ -155,6 +102,7 @@ nav {
         }
     }
 
+    // Close button state (white X)
     &.close {
         span {
             background-color: #fff !important;
@@ -175,23 +123,139 @@ nav {
             }
         }
     }
+    
+    // Mobile responsive
+    @media (min-width: 20rem) and (max-width: 40rem) {
+        width: 2rem;
+        height: 2rem;
+
+        span {
+            height: 0.1875rem;
+            border-radius: 0.09375rem;
+        }
+    }
+    
+    // Tablet responsive
+    @media (min-width: 40.1rem) and (max-width: 60rem) {
+        width: 2.25rem;
+        height: 2.25rem;
+
+        span {
+            height: 0.21875rem;
+            border-radius: 0.109375rem;
+        }
+    }
 }
 
-// Mobile responsive styles
-@media (max-width: 768px) {
-    .off_screen_menu {
+// Off-Screen Menu (Full Screen Overlay)
+.off_screen_menu {
+    background-color: #151515;
+    height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    overflow-y: hidden;
+    transform-origin: top right;
+    scale: 0;
+    transition: 0.4s ease;
+    z-index: 2000;
+
+    img {
+        width: 5.5rem;
+        padding-bottom: 2.5rem;
+        opacity: 0;
+        
+        @media (min-width: 20rem) and (max-width: 40rem) {
+            width: 4rem;
+            padding-bottom: 1.5rem;
+        }
+        
+        @media (min-width: 40.1rem) and (max-width: 60rem) {
+            width: 5rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    li {
+        padding-top: 1.25rem;
+        
+        @media (min-width: 20rem) and (max-width: 40rem) {
+            padding-top: 1rem;
+        }
+        
+        @media (min-width: 40.1rem) and (max-width: 60rem) {
+            padding-top: 1.125rem;
+        }
+    }
+
+    a {
+        color: #fff;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding-left: 7.5rem;
+        opacity: 0;
+
+        &:hover {
+            text-decoration: underline;
+            transition: 1s ease;
+            transition-delay: 0.1s;
+        }
+    }
+
+    // Active state (menu is open)
+    &.active {
+        transform-origin: top right;
+        scale: 100%;
+
+        img, a {
+            transition-delay: 1s;
+            transition: 0.5s ease;
+            transition-property: opacity;
+            opacity: 100%;
+            z-index: 1;
+        }
+    }
+
+    // Close button inside menu
+    .a965_header_hammenu.close {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        z-index: 2100;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+    
+    // Mobile responsive
+    @media (min-width: 20rem) and (max-width: 40rem) {
         padding-top: 1.2rem;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
-        width: 100vw;
-        min-width: 0;
         box-sizing: border-box;
 
         .a965_header_hammenu.close {
-            top: 16px;
-            right: 16px;
-            width: 32px;
-            height: 32px;
+            top: 1rem;
+            right: 1rem;
+            width: 2rem;
+            height: 2rem;
         }
 
         a {
@@ -200,15 +264,25 @@ nav {
             padding-left: 2rem;
         }
     }
+    
+    // Tablet responsive
+    @media (min-width: 40.1rem) and (max-width: 60rem) {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
 
-    .a965_header_hammenu {
-        width: 32px;
-        height: 32px;
+        .a965_header_hammenu.close {
+            top: 2rem;
+            right: 2rem;
+            width: 2.25rem;
+            height: 2.25rem;
+        }
 
-        span {
-            height: 3px;
-            border-radius: 1.5px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        a {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            padding-left: 5rem;
         }
     }
 }
