@@ -1,4 +1,3 @@
-// News page logic as ES module
 
 export function initNewsFilter() {
   const filterLinks = document.querySelectorAll('.a965_news_filter a');

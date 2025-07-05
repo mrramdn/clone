@@ -1871,4 +1871,100 @@ h1 {
   text-decoration: underline;
 }
 
+.a965_hero_brands_child {
+  position: relative;
+  width: 100%;
+  height: 45rem;
+  background-image: url("../../images/brands-collab/collabs/H&M Hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+.a965_hero_brands_child .frame1_top {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.a965_hero_brands_child .frame3-bottom {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5rem 4rem;
+}
+
+.a965_brand_index {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F2EB;
+  padding-top: 5vh;
+}
+.a965_brand_index_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10vh;
+}
+.a965_brand_index_text {
+  padding-left: 3vw;
+}
+.a965_brand_index h2 {
+  font-size: 2rem;
+  padding-bottom: 1.8vh;
+  line-height: 2.5rem;
+  width: 30vw;
+  font-weight: 300;
+}
+.a965_brand_index img {
+  width: 20vw;
+}
+.a965_brand_index_list button {
+  background-color: #000;
+  padding: 1rem 3rem 1rem 3rem;
+  color: #fff;
+}
+
+.brands_load_more {
+  display: block;
+  margin: 3rem auto 3rem auto;
+  padding: 1rem 2.5rem;
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.brands_load_more:hover {
+  color: #b3ada7;
+}
+
+@keyframes newsImageReveal {
+  0% {
+    mask-image: linear-gradient(90deg, #000 0%, transparent 0%);
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 0%);
+  }
+  100% {
+    mask-image: linear-gradient(90deg, #000 100%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, #000 100%, transparent 100%);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
