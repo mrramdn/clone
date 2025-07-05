@@ -1722,4 +1722,153 @@ h1 {
   }
 }
 
+.a965_hero_festival_child {
+  position: relative;
+  width: 100%;
+  height: 45rem;
+  background-image: url("../../images/festivals/03 Girl Power/Festivals - ABC Hero Image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+.a965_hero_festival_child .frame1_top {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.a965_hero_festival_child .frame2_center {
+  position: absolute;
+  padding-right: 4rem;
+  margin-left: 2rem;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.a965_hero_festival_child .frame2_center .festival_arrow {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 0.2s;
+}
+.a965_hero_festival_child .frame2_center .festival_arrow:hover {
+  background: rgba(0, 0, 0, 0.32);
+}
+.a965_hero_festival_child .frame2_center .festival_arrow img {
+  width: 2.2rem;
+  height: 2.2rem;
+  filter: brightness(0) invert(1);
+}
+.a965_hero_festival_child .frame3-bottom {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5rem 5rem;
+}
+.a965_hero_festival_child .frame3-bottom .festival-logo {
+  max-width: 32rem;
+  height: auto;
+}
+.a965_hero_festival_child .frame3-bottom .festival-link {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+.a965_hero_festival_child .frame3-bottom .festival-link:hover {
+  opacity: 1;
+}
+
+@media (max-width: 60rem) {
+  .a965_hero_festival_child {
+    height: 38rem;
+  }
+  .a965_hero_festival_child .frame3-bottom {
+    padding: 0 2rem;
+    font-size: 1.3rem;
+  }
+  .a965_hero_festival_child .frame2_center .festival_arrow, .a965_hero_festival_child .frame2_center .festival-arrow {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .a965_hero_festival_child .frame2_center .festival_arrow img, .a965_hero_festival_child .frame2_center .festival-arrow img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.a965_gallery_top {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.a965_gallery_top img {
+  width: 20rem;
+  padding: 0.5rem;
+}
+@media (min-width: 20rem) and (max-width: 40rem) {
+  .a965_gallery_top {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .a965_gallery_top img {
+    width: 10rem;
+  }
+}
+.a965_gallery_bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+.a965_gallery_bottom img {
+  width: 20rem;
+  padding: 0.5rem;
+}
+@media (min-width: 20rem) and (max-width: 40rem) {
+  .a965_gallery_bottom {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .a965_gallery_bottom img {
+    width: 10rem;
+  }
+}
+.a965_article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+}
+.a965_article a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */
