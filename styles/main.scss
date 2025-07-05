@@ -1,8 +1,13 @@
-@use "scss/global.scss";
-@use "scss/navbar.scss";
-@use "scss/footer.scss";
+@use "scss/component/global";
+@use "scss/component/navbar";
+@use "scss/component/footer";
 
-@use "scss/index.scss";
-@use "scss/pages/festival.scss";
+@use "scss/pages/index";
+
+@use "scss/pages/festival/festival";
+@use "scss/pages/festival/festival-base";
+
+@use "scss/pages/community/community";
+
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
