@@ -52,11 +52,11 @@ function initFestivalRowHover() {
         const arrow = item.querySelector('.list-arrow');
 
         item.addEventListener('mouseover', () => {
-            if (arrow) arrow.src = '../images/logo-icons/Arrow Icon-Hover.svg';
+            if (arrow) arrow.src = '../../images/logo-icons/Arrow Icon-Hover.svg';
         });
         
         item.addEventListener('mouseout', () => {
-            if (arrow) arrow.src = '../images/logo-icons/Arrow Icon.svg';
+            if (arrow) arrow.src = '../../images/logo-icons/Arrow Icon.svg';
         });
     });
 
@@ -80,11 +80,11 @@ function initFestivalRowHover() {
         const arrowb = item.querySelector('.list-arrow-b');
 
         item.addEventListener('mouseover', () => {
-            if (arrowb) arrowb.src = '../images/logo-icons/Black Arrow Icon-Hover.svg';
+            if (arrowb) arrowb.src = '../../images/logo-icons/Black Arrow Icon-Hover.svg';
         });
         
         item.addEventListener('mouseout', () => {
-            if (arrowb) arrowb.src = '../images/logo-icons/Black Arrow Icon.svg';
+            if (arrowb) arrowb.src = '../../images/logo-icons/Black Arrow Icon.svg';
         });
     });
 }

@@ -4,10 +4,8 @@
 
 @use "scss/pages/index";
 
-@use "scss/pages/festival/festival";
-@use "scss/pages/festival/festival-base";
-
-@use "scss/pages/community/community";
+@use "scss/pages/base";
+@use "scss/pages/base-child";
 
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');

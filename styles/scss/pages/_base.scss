@@ -1,0 +1,805 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  /*outline: 1px solid red;*/
+}
+
+/* ========================================
+   1. BASE STYLES
+   ======================================== */
+
+.a965_single_hero{
+  width: 100%;
+  padding: 6rem 5rem 5rem 5rem;
+    @media (min-width: 20rem) and (max-width: 40rem){
+      padding: 6rem 5rem 3rem 3rem;
+    }
+    /*tablet*/
+    @media (min-width: 40.1rem) and (max-width: 60rem){
+    }
+}
+
+h1{
+  font-weight: 400;
+}
+
+.a965_word{
+  width: 100%;
+  background-color: #F8F2EB;
+  padding: 12rem 5rem 12rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    img{
+      padding-top: 2.5rem;
+    }
+    h4{
+      font-size: 1.8rem;
+    }
+    p{
+      width: 48rem;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      font-weight: 400;
+    }
+  }
+  @media (min-width: 20rem) and (max-width: 40rem){
+    display: flex;
+    justify-content: flex-start;
+    padding: 6rem 2rem 6rem 2rem;
+    flex-direction: column;
+    h4{
+      padding-bottom: 1.2rem;
+    }
+    p{
+      font-size: 1.5rem;
+      line-height: 2rem;
+      width: 100%;
+    }
+    &_content{
+      flex-direction: column;
+      gap: 5rem;
+      p{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        font-weight: 300;
+      }
+    }
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+    
+    display: flex;
+    justify-content: flex-start;
+    padding: 4rem;
+    flex-direction: column;
+    &_content{
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+}
+
+/*styling for white list*/
+.a965_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  border-bottom: 0.2rem solid #fff;
+  opacity: 0.3;
+  a{
+    color: #fff;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+  }
+  .popupimg{
+    position: absolute;
+    display: flex;
+    width: 20rem;
+    z-index: 2;
+    pointer-events: none;
+    right: 24rem;
+    opacity: 0;
+  }
+  &.hover{
+    opacity: 1;
+    transition: 0.5s ease;
+    .popupimg{
+      opacity: 1;
+      transition: ease;
+    }
+  }
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding: 0.8rem;
+    opacity: 1;
+    a{
+      font-size: 1.5rem;
+    }
+    .popupimg{
+      opacity: 1;
+      width: 6rem;
+      right: 8rem;
+      opacity: 0;
+    }
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+    .popupimg{
+      opacity: 1;
+      width: 12rem;
+      right: 10rem;
+      opacity: 0;
+    }
+  }
+}
+
+/*styling for black list*/
+.a965_rowb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  border-bottom: 0.2rem solid #000;
+  opacity: 0.3;
+  a{
+    color: #000;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+  }
+  .popupimg_b{
+    position: absolute;
+    display: flex;
+    width: 20rem;
+    z-index: 2;
+    pointer-events: none;
+    right: 24rem;
+    opacity: 0;
+  }
+  &.hover{
+    opacity: 1;
+    transition: 0.5s ease;
+    .popupimg_b{
+      opacity: 1;
+      transition: ease;
+    }
+  }
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding: 0.8rem;
+    opacity: 1;
+    a{
+      font-size: 1.5rem;
+    }
+    .popupimg{
+      opacity: 1;
+      width: 20vh;
+      opacity: 0;
+    }
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+
+  }
+}
+
+/* ========================================
+   2. FESTIVAL PAGE
+   ======================================== */
+
+.a965_festival_img{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/festivals/Festivals\ Hero\ Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_festival_list{
+  width: 100%;
+  height: 100%;
+  background-color: #305966;
+  padding: 6rem 6rem 10rem 6rem;
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+
+  }
+}
+
+/* ========================================
+   3. COMMUNITY PAGE
+   ======================================== */
+
+.a965_community_img{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/community/Community\ Hero\ Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_community_list{
+  width: 100%;
+  height: 100%;
+  background-color: #ECB572;
+  padding: 6rem 6rem 10rem 6rem;
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+  }
+}
+
+/* ========================================
+   4. ARTIST SPOTLIGHT PAGE
+   ======================================== */
+
+.a965_artist_spotlight_img{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/artist-spotlight/Artist\ Spotlight\ Hero\ Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_artist_spotlight_list{
+  width: 100%;
+  height: 100%;
+  background-color: #71335B;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+
+  }
+}
+
+/* ========================================
+   5. BRANDS COLLAB PAGE
+   ======================================== */
+
+.a965_brands_collab_img{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/brands-collab/Brands\ Collab\ Hero\ Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_brands_collab_list{
+  width: 100%;
+  height: 100%;
+  background-color: #3E2C26;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+
+  }
+}
+
+/* ========================================
+   6. SPORT PAGE
+   ======================================== */
+
+.a965_sport_img{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/sports/Sports\ Hero\ Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_sport_list{
+  width: 100%;
+  height: 100%;
+  background-color: #B73E31;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  @media (min-width: 20rem) and (max-width: 40rem){
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 41rem) and (max-width: 60rem){
+
+  }
+}
+
+/* ========================================
+   7. NEWS PAGE
+   ======================================== */
+
+.a965_news_img{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/news/News\ Hero\ Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_news_section_wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8rem;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.a965_news_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #f8f2eb;
+  padding: 0;
+  border: none;
+  position: relative;
+  width: 100%;
+  margin: 0 auto 6rem auto;
+  
+  .a965_news_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem 0 1rem 0;
+    position: relative;
+    min-height: 14rem;
+    border-bottom: 2px solid #222;
+    border-top: none;
+    margin: 0;
+    width: 100%;
+    &:hover {
+      background: #f3ede5;
+      .news_arrow img {
+        content: url('../../images/logo-icons/Black Arrow Icon-Hover.svg');
+        width: 1.7rem;
+        transform: none;
+        filter: none;
+      }
+    }
+    .news_image {
+      width: 16rem;
+      height: 16rem;
+      border-radius: 0;
+      object-fit: cover;
+      margin-right: 3.2rem;
+      flex-shrink: 0;
+      box-shadow: none;
+      border-bottom-right-radius: 2.5rem;
+    }
+    .news_center_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0rem 12rem;
+      flex: 1 1 0;
+      min-width: 0;
+      gap: 3.2rem;
+      margin: 0 2rem;
+      .news_image {
+        margin-right: 0;
+      }
+      .news_content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+        .news_title {
+          font-size: 2rem;
+          font-weight: 400;
+          color: #222;
+          line-height: 1.2;
+        }
+      }
+    }
+    .news_arrow {
+      margin-left: 2.4rem;
+      font-size: 2.6rem;
+      color: #222;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        transition: transform 0.3s cubic-bezier(.4,2,.6,1), filter 0.2s;
+      }
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .a965_news_section_wrap {
+    padding: 0 1.5rem;
+  }
+  .a965_news_list {
+    .a965_news_item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem 0 2rem 0;
+      .news_index {
+        margin-bottom: 0.8rem;
+        margin-right: 0;
+      }
+      .news_image {
+        margin-bottom: 1.2rem;
+        margin-right: 0;
+        width: 100%;
+        height: 18rem;
+      }
+      .news_content {
+        .news_title {
+          font-size: 1.7rem;
+        }
+      }
+      .news_arrow {
+        align-self: flex-end;
+        margin-left: 0;
+        margin-top: 1.2rem;
+      }
+    }
+  }
+}
+
+.a965_news_filter {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f8f2eb;
+  padding: 1rem 0 2.5rem 0;
+  list-style: none;
+  margin: 0 0 1rem 0;
+  position: relative;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1.2rem;
+    height: 2px;
+    background: #222;
+    z-index: 1;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    a {
+      font-size: 1.4rem;
+      color: #b3ada7;
+      font-weight: 400;
+      text-decoration: none;
+      transition: color 0.2s, font-weight 0.2s;
+      &.active {
+        color: #222;
+        font-weight: 500;
+      }
+      &:hover {
+        color: #222;
+      }
+      .filter-count {
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-left: 0.4rem;
+        color: #b3ada7;
+        vertical-align: super;
+      }
+      &.active .filter-count {
+        color: #222;
+      }
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .a965_news_filter {
+    gap: 1.2rem;
+    padding: 1.2rem 0 1.2rem 0;
+    li a {
+      font-size: 1.1rem;
+    }
+    &::after {
+      bottom: -0.8rem;
+    }
+  }
+}
+
+.news_load_more {
+  display: block;
+  margin: 3rem auto 3rem auto;
+  padding: 1rem 2.5rem;
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+}
+.news_load_more:hover {
+  color: #b3ada7;
+}
+
+@keyframes newsImageReveal {
+  0% {
+    mask-image: linear-gradient(90deg, #000 0%, transparent 0%);
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 0%);
+  }
+  100% {
+    mask-image: linear-gradient(90deg, #000 100%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, #000 100%, transparent 100%);
+  }
+}
+
+/* ========================================
+   8. OUR FAM PAGE
+   ======================================== */
+
+.a965_header_scroll{
+    background-color: #F8F2EB;
+    padding: 4rem 8rem 4rem 8rem;
+    &_content{
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    text-align: right;
+    }
+}
+
+.a965_ourfam_hero{
+    width: 100%;
+    display: flex;
+    padding: 6rem 5rem 6rem 5rem;
+    h1{
+        font-size: 5.2rem;
+        line-height: 6.4rem;
+        font-weight: 400;
+    }
+    @media (min-width: 20rem) and (max-width: 40rem){
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_festivals_imgfam{
+    width: 100%;
+    height: 45rem;
+    background-image: url('../images/our\ fam/Our Fam Hero Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 20rem) and (max-width: 40rem){
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }
+}
+
+.a965_aboutus{
+    width: 100%;
+    display: flex;
+    padding: 6rem 5rem 6rem 5rem;
+    justify-content: space-between;
+    h4{
+        font-size: 1.5rem;
+        line-height: 5rem;
+    }
+    p{
+        width: 40rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    @media (min-width: 20rem) and (max-width: 40rem){
+        padding: 4rem 2rem 6rem 2rem;
+        flex-direction: column;
+        p{
+            width: 100%;
+        }
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+    }   
+}
+
+.a965_2img{
+    width: 100%;
+    display: flex;
+    padding: 7.5rem 5rem 7.5rem 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    gap: 10vh;
+    p{
+    width: 42vw;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    }
+    &_content{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    div{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    img{
+        width: 25rem;
+        margin-left: 1.5rem;
+    }
+    @media (min-width: 20rem) and (max-width: 40rem){
+        height: auto;
+        padding: 4rem 2rem 4rem 2rem;
+        p{
+            width: 68vw;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        img{
+            width: 10rem;
+        }
+
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+        &_content{
+            padding: 3rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:flex-start;
+        }
+    } 
+
+}
+
+.a965_festlogo{
+    position: relative;
+    width: 100%;
+    height: 45rem;
+    &_bg{
+        position: absolute;
+        width: 100%;
+        height: 45rem;
+        object-fit: cover;
+        z-index:1;
+    }
+    &_content{
+        position: relative;
+        height: 45rem;
+        display: flex;
+        z-index:2;
+        color: #fff;
+        padding: 5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-end;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 200;
+        a{
+        font-size: 2.1rem;
+        font-weight: 400;
+        text-decoration: underline;
+        color: #fff; 
+        }
+    }
+    @media (min-width: 20rem) and (max-width: 40rem){
+        height: auto;
+        &_content{
+            padding: 2rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:flex-start;
+        }
+
+    }
+    @media (min-width: 41rem) and (max-width: 60rem){
+        &_content{
+            padding: 3rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:flex-start;
+        }
+    } 
+}
