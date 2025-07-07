@@ -91,6 +91,5 @@ export function initNewsFilter() {
     });
   }
 
-  // Initial numbering and count update
   applyFilter('all');
 }

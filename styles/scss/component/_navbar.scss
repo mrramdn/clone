@@ -1,8 +1,5 @@
-// ===========================================
 // NAVBAR STYLES
-// ===========================================
 
-// Header Container
 .a965_header {
     background-color: #F8F2EB;
     width: 100%;
@@ -15,6 +12,7 @@
             
             @media (min-width: 20rem) and (max-width: 40rem) {
                 margin-left: 1.5rem;
+                width: 3.3rem;
             }
             
             @media (min-width: 40.1rem) and (max-width: 60rem) {
@@ -24,7 +22,6 @@
     }
 }
 
-// Navigation Container
 nav {
     padding-top: 2.5rem;
     padding-right: 2.5rem;
@@ -42,7 +39,6 @@ nav {
     }
 }
 
-// Hamburger Menu Button
 .a965_header_hammenu {
     cursor: pointer;
     width: 2.5rem;
@@ -82,7 +78,6 @@ nav {
         }
     }
 
-    // Active state (when menu is open)
     &.active span {
         background-color: #F8F2EB;
 
@@ -102,7 +97,6 @@ nav {
         }
     }
 
-    // Close button state (white X)
     &.close {
         span {
             background-color: #fff !important;
@@ -124,7 +118,6 @@ nav {
         }
     }
     
-    // Mobile responsive
     @media (min-width: 20rem) and (max-width: 40rem) {
         width: 2rem;
         height: 2rem;
@@ -135,7 +128,6 @@ nav {
         }
     }
     
-    // Tablet responsive
     @media (min-width: 40.1rem) and (max-width: 60rem) {
         width: 2.25rem;
         height: 2.25rem;
@@ -147,7 +139,6 @@ nav {
     }
 }
 
-// Off-Screen Menu (Full Screen Overlay)
 .off_screen_menu {
     background-color: #151515;
     height: 100vh;
@@ -214,7 +205,6 @@ nav {
         }
     }
 
-    // Active state (menu is open)
     &.active {
         transform-origin: top right;
         scale: 100%;
@@ -228,7 +218,6 @@ nav {
         }
     }
 
-    // Close button inside menu
     .a965_header_hammenu.close {
         position: absolute;
         top: 2.5rem;
@@ -244,7 +233,6 @@ nav {
         padding: 0;
     }
     
-    // Mobile responsive
     @media (min-width: 20rem) and (max-width: 40rem) {
         padding-top: 1.2rem;
         padding-left: 1.2rem;
@@ -265,7 +253,6 @@ nav {
         }
     }
     
-    // Tablet responsive
     @media (min-width: 40.1rem) and (max-width: 60rem) {
         padding-top: 2rem;
         padding-left: 2rem;
