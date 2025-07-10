@@ -134,6 +134,9 @@ a {
 .a965_header.navbar--scrolled .a965_header_hammenu span {
   background-color: #151515 !important;
 }
+.a965_header .header_logo {
+  padding: 1rem 0 1rem 2rem;
+}
 .a965_header .header_logo img {
   width: 3rem;
 }
