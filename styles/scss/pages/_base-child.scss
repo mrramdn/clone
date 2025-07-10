@@ -1,5 +1,9 @@
 // FESTIVAL PAGE & REUSABLE HERO STYLES
 
+body{
+  padding: 0rem;
+}
+
 .a965_hero_festival_child {
   position: relative;
   width: 100%;
@@ -66,7 +70,7 @@
   }
 
   .frame3-bottom {
-    color: #fff;
+    color: #f8f2eb;
     font-size: 2.2rem;
     font-weight: 400;
     display: flex;
@@ -78,11 +82,35 @@
       height: auto;
     }
     .festival-link {
-      color: #fff;
+      color: #f8f2eb;
       font-size: 1.3rem;
-      text-decoration: underline;
-      opacity: 0.9;
-      &:hover { opacity: 1; }
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.2rem;
+        width: 100%;
+        height: 0.18em;
+        background: #f8f2eb;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 1px;
+      }
+      
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      
+      &:not(:hover)::after {
+        transform: scaleX(0);
+        transform-origin: right;
+      }
     }
   }
 }
@@ -201,21 +229,70 @@
     align-items: center;
     justify-content: center;
 
-    gap: 6rem;;
-    margin: 12rem 0;
-    a{
+    gap: 6rem;
+    margin: 10rem auto;
+
+    .left, .right{
+      max-width: 21%;
+      min-width: 20%;
+      display: flex;
+      padding: 2rem;
+      align-items: center;
+      a{
         font-size: 1.5rem;
         font-weight: 400;
         text-align: center;
-        text-decoration: underline;
+        width: auto;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.2rem;
+            width: 100%;
+            height: 0.18em;
+            background: #151515;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 1px;
+        }
+        
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        
+        &:not(:hover)::after {
+            transform: scaleX(0);
+            transform-origin: right;
+        }
     }
+    }
+    
     @media (min-width: 20rem) and (max-width: 40rem){
       flex-direction: column;
-      margin: 1em 4rem 4rem 4rem;
-      gap: 1em;
-      a{
-        font-size: 1.2rem;
+      align-items: center;
+      margin: 2rem 2rem 4rem 2rem;
+      gap: 2rem;
+      .left, .right{
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        a{
+          font-size: 1.2rem;
+          text-align: center;
+          display: block;
+          width: auto;
+        }
       }
+      
     }
     @media (min-width: 40.1rem) and (max-width: 60rem){
      a{
@@ -251,7 +328,7 @@
   }
 
   .frame3-bottom {
-    color: #fff;
+    color: #f8f2eb;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -275,7 +352,7 @@
     flex-direction: column;
     align-items: center;
     margin: 2rem;
-    background-color: #F8F2EB;
+    background-color: #f8f2eb;
     &_list{
         display: flex;
         flex-direction: row;
@@ -298,16 +375,16 @@
     }
    &_list{
      button{
-        background-color: #000;
+        background-color: #151515;
         padding: 1rem 3rem 1rem 3rem;
-        color: #fff;
-        border: 2px solid #000;
+        color: #f8f2eb;
+        border: 2px solid #151515;
         transition: all 0.3s ease;
         
         &:hover {
-          background-color: #fff;
-          color: #000;
-          border: 2px solid #000;
+          background-color: #f8f2eb;
+          color: #151515;
+          border: 2px solid #151515;
         }
     }
    }
@@ -456,7 +533,7 @@
   }
 
   .frame3-bottom {
-    color: #fff;
+    color: #f8f2eb;
     font-size: 2.2rem;
     font-weight: 400;
     display: flex;
@@ -796,7 +873,7 @@
 
 .overlay-btn {
   position: absolute;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(168, 168, 168, 0.9);
   border: none;
   border-radius: 50%;
   width: 3rem;
@@ -810,11 +887,11 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   font-weight: bold;
-  color: #000;
+  color: #151515;
   
   &:hover {
-    background: rgba(255, 255, 255, 1);
-    transform: scale(1.1);
+    border: #151515 2px solid;
+    background-color: #f8f2eb;
   }
   
   img {
