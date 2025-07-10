@@ -88,7 +88,7 @@ a {
   background-color: #f8f2eb;
 }
 .a965_header.navbar-transparent.navbar--scrolled {
-  background: rgba(255, 255, 255, 0.98) !important;
+  background: #f8f2eb !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
