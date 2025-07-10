@@ -85,7 +85,7 @@ a {
   box-shadow: none;
 }
 .a965_header.navbar-transparent .a965_header_hammenu span {
-  background-color: #fff;
+  background-color: #f8f2eb;
 }
 .a965_header.navbar-transparent.navbar--scrolled {
   background: rgba(255, 255, 255, 0.98) !important;
@@ -1886,35 +1886,51 @@ h1 {
 .news_load_more {
   display: block;
   margin: 3rem auto 3rem auto;
-  padding: 1rem 2.5rem;
+  padding: 0;
   background: none;
   border: none;
   color: #222;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   outline: none;
-  transition: color 0.2s;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.news_load_more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 0.18em;
+  background: #222;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1px;
+}
+.news_load_more:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.news_load_more:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
 }
 @media (min-width: 20rem) and (max-width: 40rem) {
   .news_load_more {
     margin: 0rem auto 4em auto;
-    padding: 0rem 2rem;
     font-size: 0.9rem;
   }
 }
 @media (min-width: 40.1rem) and (max-width: 60rem) {
   .news_load_more {
     margin: 2.5rem auto;
-    padding: 0.9rem 2.2rem;
     font-size: 0.95rem;
   }
-}
-
-.news_load_more:hover {
-  color: #b3ada7;
 }
 
 @keyframes slideInFromLeft {
@@ -2573,21 +2589,39 @@ body {
 .brands_load_more {
   display: block;
   margin: 3rem auto 3rem auto;
-  padding: 1rem 2.5rem;
+  padding: 0;
   background: none;
   border: none;
   color: #222;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   outline: none;
-  transition: color 0.2s;
+  position: relative;
+  transition: color 0.3s ease;
 }
-
-.brands_load_more:hover {
-  color: #b3ada7;
+.brands_load_more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 0.18em;
+  background: #222;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1px;
+}
+.brands_load_more:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.brands_load_more:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
 .a965_hero_news_child {
