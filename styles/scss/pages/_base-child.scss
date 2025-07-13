@@ -1,9 +1,5 @@
 // FESTIVAL PAGE & REUSABLE HERO STYLES
 
-body{
-  padding: 0rem;
-}
-
 .a965_hero_festival_child {
   position: relative;
   width: 100%;
@@ -28,15 +24,8 @@ body{
     align-items: flex-start;
   }
 
-  .frame2_center {      
-    .news_child_title {
-        font-size: 2rem;
-        font-weight: 200;
-        width: 100%;
-        color: #222;
-        line-height: 1.2;
-        margin: 0;
-      }
+  .frame2_center {
+    position: absolute;
     padding-right: 4rem;
     margin-left: 2rem;
     top: 50%;
@@ -70,54 +59,52 @@ body{
   }
 
   .frame3-bottom {
-    color: #f8f2eb;
     font-size: 2.2rem;
     font-weight: 400;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 5rem 5rem;
-    .festival-logo {
-      max-width: 32rem;
-      height: auto;
-    }
-    .festival-link {
+     a{
       color: #f8f2eb;
-      font-size: 1.3rem;
-      text-decoration: none;
-      position: relative;
-      transition: color 0.3s ease;
-      
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -0.2rem;
-        width: 100%;
-        height: 0.18em;
-        background: #f8f2eb;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        border-radius: 1px;
-      }
-      
-      &:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-      }
-      
-      &:not(:hover)::after {
-        transform: scaleX(0);
-        transform-origin: right;
-      }
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        width: auto;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.2em;
+            width: 100%;
+            height: 0.1em;
+            background: #f3ede5;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 1px;
+        }
+        
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        
+        &:not(:hover)::after {
+            transform: scaleX(0);
+            transform-origin: right;
+        }
     }
   }
 }
 
 @media (min-width: 20rem) and (max-width: 40rem) {
-  .a965_hero_festival_child {
-    height: 32rem;
+  .a965_hero_news_child {
+    height: 36rem;
     .frame2_center {
       padding-right: 2rem;
       margin-left: 1rem;
@@ -145,7 +132,7 @@ body{
 
 
 @media (min-width: 40.1rem) and (max-width: 60rem) {
-  .a965_hero_festival_child {
+  .a965_hero_news_child {
     height: 32rem;
     .frame2_center {
       padding-right: 2rem;
@@ -171,7 +158,6 @@ body{
     }
   }
 }
-
 
 
 .a965_gallery_top{
@@ -225,19 +211,21 @@ body{
 
 .a965_article{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    gap: 6rem;
+    gap: 4rem;
     margin: 10rem auto;
 
+    .left{
+      justify-content: right;
+    }
+    .right{
+      justify-content: left;
+    }
+
     .left, .right{
-      max-width: 21%;
-      min-width: 20%;
+      min-width: 30%;
       display: flex;
-      padding: 2rem;
-      align-items: center;
       a{
         font-size: 1.5rem;
         font-weight: 400;
@@ -251,9 +239,9 @@ body{
             content: "";
             position: absolute;
             left: 0;
-            bottom: -0.2rem;
+            bottom: -0.2em;
             width: 100%;
-            height: 0.18em;
+            height: 0.1em;
             background: #151515;
             transform: scaleX(0);
             transform-origin: right;
@@ -468,14 +456,14 @@ body{
   outline: none;
   position: relative;
   transition: color 0.3s ease;
-  
+
   &::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -0.2rem;
     width: 100%;
-    height: 0.18em;
+    height: 0.1em;
     background: #222;
     transform: scaleX(0);
     transform-origin: right;

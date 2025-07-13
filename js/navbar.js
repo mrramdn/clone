@@ -14,12 +14,18 @@ function initNavbar() {
         menu.classList.remove('active');
         hamburger.classList.remove('active');
         body.style.overflow = '';
+        body.style.position = '';
+        body.style.touchAction = '';
+        body.style.overscrollBehavior = '';
     }
 
     function openMenu() {
         menu.classList.add('active');
         hamburger.classList.add('active');
         body.style.overflow = 'hidden';
+        body.style.position = 'fixed';
+        body.style.touchAction = 'none';
+        body.style.overscrollBehavior = 'none';
     }
 
     hamburger.addEventListener('click', function(e) {
@@ -69,35 +75,47 @@ function initNavbar() {
         const currentScrollY = window.scrollY;
         const logo = header.querySelector('.header_logo img');
         const isTransparent = header.classList.contains('navbar-transparent');
+        const hamburgerMenu = header.querySelector('.a965_header_hammenu:not(.close)');
+        
+        const isMenuOpen = menu.classList.contains('active');
         
         if (currentScrollY > 50) {
             header.classList.add('navbar--scrolled');
-            console.log('Added navbar--scrolled class');
             
             if (isTransparent && logo && logo.src.includes('Logo-white.svg')) {
                 logo.src = logo.src.replace('Logo-white.svg', 'Logo.svg');
-                console.log('Changed logo to black');
+            }
+            
+            if (!isMenuOpen && hamburgerMenu) {
+                hamburgerMenu.style.setProperty('--hamburger-color', '#151515', 'important');
             }
         } else {
             header.classList.remove('navbar--scrolled');
-            console.log('Removed navbar--scrolled class');
             
             if (isTransparent && logo && logo.src.includes('Logo.svg') && !logo.src.includes('Logo-white.svg')) {
                 logo.src = logo.src.replace('Logo.svg', 'Logo-white.svg');
-                console.log('Changed logo to white');
+            }
+            
+            if (!isMenuOpen && hamburgerMenu) {
+                hamburgerMenu.style.removeProperty('--hamburger-color');
             }
         }
         
         if (currentScrollY <= 0) {
             header.classList.remove('navbar--hidden');
             header.classList.add('navbar--visible');
-        } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
-            header.classList.remove('navbar--visible');
-            header.classList.add('navbar--hidden');
-        } else {
-            header.classList.remove('navbar--hidden');
-            header.classList.add('navbar--visible');
+        } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            if (!header.classList.contains('navbar--hidden')) {
+                header.classList.remove('navbar--visible');
+                header.classList.add('navbar--hidden');
+            }
+        } else if (currentScrollY < lastScrollY) {
+            if (!header.classList.contains('navbar--visible')) {
+                header.classList.remove('navbar--hidden');
+                header.classList.add('navbar--visible');
+            }
         }
+        
         lastScrollY = currentScrollY;
         ticking = false;
     }
