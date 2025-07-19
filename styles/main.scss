@@ -1,4 +1,5 @@
-@use "scss/component/global";
+@use "scss/base/reset";
+
 @use "scss/component/navbar";
 @use "scss/component/footer";
 
@@ -6,6 +7,3 @@
 
 @use "scss/pages/base";
 @use "scss/pages/base-child";
-
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');

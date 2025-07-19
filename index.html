@@ -1,135 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>19sixtyfive</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <header id="a965_header" class="a965_header navbar-default">
-        <nav>
-            <a class="header_logo" href="#">
-                <img src="../../images/logo-icons/19sixtyfive Logo.svg" alt="1965 logo">
-            </a>
-            <div class="a965_header_hammenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-        <div class="off_screen_menu">
-            <a style="padding: 0; margin-left: 0;" href="index.html">
-                <img src="images/logo-icons/19sixtyfive Logo-white.svg" alt="logo-1965">
-            </a>
-            <button class="a965_header_hammenu close" aria-label="Close menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="a965_header_menu">
-                <ul>
-                     <li><a href="/pages/festival">Festival</a></li>
-                    <li><a href="/pages/community">Community</a></li>
-                    <li><a href="/pages/artist-spotlight">Artist Spotlight</a></li>
-                    <li><a href="/pages/brands-collab">Brands Collab</a></li>
-                    <li><a href="/pages/sports">Sports</a></li>
-                    <li><a href="/pages/news">News</a></li>
-                    <li><a href="/pages/our-fam">Our Fam</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+<header class="main-header navbar-transparent">
+  <a class="main-header__logo" href="/">
+    <img src="/images/logo-icons/19sixtyfive Logo.svg" alt="19sixtyfive logo" />
+  </a>
+  <button
+    class="main-header__toggle"
+    aria-label="Open menu"
+    aria-controls="main-menu"
+    aria-expanded="false"
+  >
+    <span></span><span></span><span></span>
+  </button>
 
-    <section id="a965_hero" class="a965_hero">
-        <div class="a965_hero_content">
-        <img src="images/home/19sixtyfive Big Logo.png" alt="19sixtyfive big logo">
-        <h1 class="a965_hero_content_title">We're 19sixtyfive.<br> We think different. Do different.</h1>
-        <p class="a965_hero_content_para">We fuse arts, music, culture, and brands to shape experiences that are anything but ordinary. Every project is different, every moment is immersive — and yes, we happen to be rather good at it. If you're looking for cookie-cutter, keep walking. We're too busy making magic happen our own way.</p>
-        </div>
-    </section>
-    <section id="a965_festivals1" class="a965_festivals1">
-        <div>
-            <h2>Common ground:<br>Festivals, flipped our way.</h2>
-            <a href="#">View more</a>
-        </div>
-    </section>
-    <section id="a965_frame" class="a965_frame1">
-        <div class="a965_frame1_content">
-            <div class="a965_frame1_content_left">
-                <img src="images/home/Community.png" alt="Community" />
-                <div class="a965_frame1_content_left_text">
-                    <a href="/pages/community/">The Community:<br>Same Series, Fresh Takes.</a>
-                </div>
-            </div>
-            <div class="a965_frame1_content_right">
-                <img class="a965_img_right" src="images/home/Artist Spotlight.png" alt="Artist Spotlight" />
-                <div class="a965_frame1_content_right_text">
-                <a href="/pages/artist-spotlight/">Artist Spotlight:<br>For The Love Of Live.</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="a965_festivals2" class="a965_festivals2">
-        <div>
-            <h2>Wanting In:<br>Because We Get It</h2>
-            <a href="#">View more</a>
-        </div>
-    </section>
-    <section id="a965_frame" class="a965_frame2">
-        <div class="a965_frame2_content">
-            <div class="a965_frame2_content_left">
-                <img class="a965_img_left" src="images/home/Sports.png" alt="Sports" />
-                <div class="a965_frame2_content_left_text">
-                    <a href="/pages/sports/">Play Nice:<br>Where Sport Gets Style.</a>
-                </div>
-            </div>
-            <div class="a965_frame2_content_right">
-                <img class="a965_img_right" src="images/home/News.png" alt="News" />
-                <div class="a965_frame2_content_right_text">
-                <a href="/pages/news">News Front:<br>Not Just Press <br>But With Punch.</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="a965_icons" class="a965_icons">
-        <img id="a965_icons_24" src="images/home/24OWLS.png" alt="24owls logo">
-        <img id="a965_icons_65"src="images/home/65.png" alt="65">
-        <img id="a965_icons_TM"src="images/home/Tangent Moves.png" alt="tangent moves">
+  <div class="main-header__menu" id="main-menu">
+    <a href="/" class="main-header__logo main-header__logo--alt">
+      <img src="/images/logo-icons/19sixtyfive Logo-white.svg" alt="logo-1965" />
+    </a>
+    <button
+      class="main-header__toggle main-header__toggle--close"
+      aria-label="Close menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-header__nav-list" aria-label="Site menu">
+      <ul>
+        <li><a href="/pages/festival">Festivals</a></li>
+        <li><a href="/pages/community">Community</a></li>
+        <li><a href="/pages/artist-spotlight">Artist Spotlight</a></li>
+        <li><a href="/pages/brands-collab">Brands Collab</a></li>
+        <li><a href="/pages/sports">Sports</a></li>
+        <li><a href="/pages/news">News</a></li>
+        <li><a href="/pages/our-fam">Our Fam</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <section class="hero-index">
+      <img
+        src="images/home/19sixtyfive Big Logo.png"
+        alt="19sixtyfive big logo"
+      />
+      <h1 class="hero-index__title">
+        We're 19sixtyfive.<br />
+        We think different. Do different.
+      </h1>
+      <p class="hero-index__text">
+        We fuse arts, music, culture, and brands to shape experiences that are
+        anything but ordinary. Every project is different, every moment is
+        immersive — and yes, we happen to be rather good at it. If you're
+        looking for cookie-cutter, keep walking. We're too busy making magic
+        happen our own way.
+      </p>
     </section>
 
-    <footer id="a965_footer" class="a965_footer">
-        <div class="a965_footer_logo">
-            <a href="index.html"><img src="images/home/19sixtyfive Logo-White.png" alt="1965 Logo White"></a>
-        </div>
-         <ul class="a965_footer_column1">
-            <li><a href="/pages/festival">Festival</a></li>
-            <li><a href="/pages/community">Community</a></li>
-            <li><a href="/pages/artist-spotlight">Artist Spotlight</a></li>
-            <li><a href="/pages/brands-collab">Brands Collab</a></li>
+    <section class="banner banner--festival">
+      <div class="banner__content">
+        <h2>Common ground:<br />Festivals, flipped our way.</h2>
+        <a href="/pages/festival">View more</a>
+      </div>
+    </section>
+
+    <section class="frame frame--first">
+      <article class="frame__content">
+        <figure class="frame__item frame__item--left">
+          <div class="frame__img">
+            <img src="images/home/Community.png" alt="Community" />
+          </div>
+          <figcaption>
+            <a href="/pages/community"
+              >The Community:<br />Same series, fresh takes.</a
+            >
+          </figcaption>
+        </figure>
+        <figure class="frame__item frame__item--right">
+          <div class="frame__img">
+            <img
+              src="images/home/Artist Spotlight.png"
+              alt="Artist Spotlight"
+            />
+          </div>
+          <figcaption>
+            <a href="/pages/artist-spotlight"
+              >Artist Spotlight:<br />For the love of live.</a
+            >
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="banner banner--brand">
+      <div class="banner__content">
+        <h2>Wanting In:<br />Because we get it</h2>
+        <a href="/pages/brands-collab">View more</a>
+      </div>
+    </section>
+
+    <section class="frame frame--second">
+      <article class="frame__content">
+        <figure class="frame__item frame__item--left">
+          <div class="frame__img">
+            <img src="images/home/Sports.png" alt="Sports" />
+          </div>
+          <figcaption>
+            <a href="/pages/sports">Play Nice:<br />Where sport gets style.</a>
+          </figcaption>
+        </figure>
+        <figure class="frame__item frame__item--right">
+          <div class="frame__img">
+            <img src="images/home/News.png" alt="News" />
+          </div>
+          <figcaption>
+            <a href="/pages/news">News Front:<br/>Not just press <br/>but with punch.</a>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="brand-icons">
+      <figure class="brand-icons__item">
+        <img src="images/home/24OWLS.png" alt="24OWLS logo" />
+      </figure>
+      <figure class="brand-icons__item">
+        <img src="images/home/65.png" alt="65 logo" />
+      </figure>
+      <figure class="brand-icons__item">
+        <img src="images/home/Tangent Moves.png" alt="Tangent Moves logo" />
+      </figure>
+    </section>
+
+    <footer class="site-footer">
+      <a href="/"
+        ><img
+          src="images/home/19sixtyfive Logo-White.png"
+          alt="1965 Logo White"
+      /></a>
+      <div class="site-footer__column1">
+        <ul class="site-footer__list site-footer__list--left">
+          <li><a href="/pages/festival">Festival</a></li>
+          <li><a href="/pages/community">Community</a></li>
+          <li><a href="/pages/artist-spotlight">Artist Spotlight</a></li>
+          <li><a href="/pages/brands-collab">Brands Collab</a></li>
         </ul>
-        <ul class="a965_footer_column1">
-            <li><a href="/pages/sports">Sports</a></li>
-            <li><a href="/pages/news">News</a></li>
-            <li><a href="/pages/our-fam">Our Fam</a></li>
-            <li><a href="">Youtube</a></li>
+        <ul class="site-footer__list site-footer__list--right">
+          <li><a href="/pages/sports">Sports</a></li>
+          <li><a href="/pages/news">News</a></li>
+          <li><a href="/pages/our-fam">Our Fam</a></li>
+          <li><a href="#">Youtube</a></li>
         </ul>
-        <div class="a965_footer_column2">
-            <p>27 Pasir Panjang Road<br>
-            Pasir Panjang Power Station<br>
-            Singapore 117537</p>
-            <ul>
-                <li>+65 6475 9200</li>
-                <li>contact@19sixtyfive.com.sg</li>
-            </ul>
-        </div>
-        <ul class="a965_footer_column3">
-            <li><a href="https://24owls.sg/" target="_blank">24owls.sg</a></li>
-            <li><a href="https://sixtyfive.sg/" target="_blank">sixtyfive.sg</a></li>
-            <li><a href="https://tangentmoves.sg/" target="_blank">tangentmoves.sg</a></li>
+      </div>
+
+      <div class="site-footer__column2">
+        <p>
+          27 Pasir Panjang Road<br />
+          Pasir Panjang Power Station<br />
+          Singapore 117537
+        </p>
+        <ul>
+          <li>+65 6475 9200</a></li>
+          <li>
+            <a href="mailto:contact@19sixtyfive.com.sg"
+              >contact@19sixtyfive.com.sg</a
+            >
+          </li>
         </ul>
+      </div>
+
+      <ul class="site-footer__column3">
+        <li><a href="https://24owls.sg/" target="_blank">24owls.sg</a></li>
+        <li>
+          <a href="https://sixtyfive.sg/" target="_blank">sixtyfive.sg</a>
+        </li>
+        <li>
+          <a href="https://tangentmoves.sg/" target="_blank">tangentmoves.sg</a>
+        </li>
+      </ul>
     </footer>
+
     <!--Javascript-->
     <script type="module" src="js/index.js"></script>
-</body>
+  </body>
 </html>

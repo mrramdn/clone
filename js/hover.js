@@ -1,34 +1,35 @@
 function initIndexIconHover() {
-    const indexIcon24 = document.getElementById('a965_icons_24');
-    const indexIcon65 = document.getElementById('a965_icons_65');
-    const indexIconTM = document.getElementById('a965_icons_TM');
-    
-    if (indexIcon24) {
-        indexIcon24.addEventListener('mouseover', () => {
-            indexIcon24.src = '../images/home/24OWLS-Hover.png';
-        });
-        indexIcon24.addEventListener('mouseout', () => {
-            indexIcon24.src = '../images/home/24OWLS.png';
-        });
-    }
-    
-    if (indexIcon65) {
-        indexIcon65.addEventListener('mouseover', () => {
-            indexIcon65.src = '../images/home/65-Hover.png';
-        });
-        indexIcon65.addEventListener('mouseout', () => {
-            indexIcon65.src = '../images/home/65.png';
-        });
-    }
-    
-    if (indexIconTM) {
-        indexIconTM.addEventListener('mouseover', () => {
-            indexIconTM.src = '../images/home/Tangent Moves-Hover.png';
-        });
-        indexIconTM.addEventListener('mouseout', () => {
-            indexIconTM.src = '../images/home/Tangent Moves.png';
-        });
-    }
+  const iconMap = [
+    {
+      selector: 'img[alt="24OWLS logo"]',
+      defaultSrc: 'images/home/24OWLS.png',
+      hoverSrc: 'images/home/24OWLS-Hover.png',
+    },
+    {
+      selector: 'img[alt="65 logo"]',
+      defaultSrc: 'images/home/65.png',
+      hoverSrc: 'images/home/65-Hover.png',
+    },
+    {
+      selector: 'img[alt="Tangent Moves logo"]',
+      defaultSrc: 'images/home/Tangent Moves.png',
+      hoverSrc: 'images/home/Tangent Moves-Hover.png',
+    },
+  ];
+
+  iconMap.forEach(({ selector, defaultSrc, hoverSrc }) => {
+    const img = document.querySelector(selector);
+
+    if (!img) return;
+
+    img.addEventListener('mouseover', () => {
+      img.src = hoverSrc;
+    });
+
+    img.addEventListener('mouseout', () => {
+      img.src = defaultSrc;
+    });
+  });
 }
 
 function initFestivalRowHover() {

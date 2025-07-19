@@ -1,0 +1,19 @@
+// =========================
+// RESET.SCSS — Pure Reset (0 0 Only)
+// =========================
+
+@use "../base/global" as *;
+
+// Reset margin & padding for all elements
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+    background-color: $color-primary;
+}
